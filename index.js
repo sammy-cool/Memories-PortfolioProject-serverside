@@ -17,6 +17,10 @@ app.use(cors());
 app.use("/posts", postRoutes);
 app.use("/user", userRouter);
 
+app.get("/", (req, res) => {
+  res.send("Hello To Memories App");
+});
+
 // mongodb cloud atlas
 // const CONNECTION_URL = ""
 
